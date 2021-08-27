@@ -1,13 +1,8 @@
 import React from 'react';
-import Backbone from 'backbone'
-import * as Marionette from 'backbone.marionette'
+import { RichieApplication  } from './index';
 
 const Bar = () => {
-  // const vent = application.vent;
-  // console.log("Backbone:", Backbone);
-  console.log("Marionette:", Marionette)
-  const application = new Marionette.Application();
-  console.log("application:", application)
+  // console.log("RichieApplication:", RichieApplication)
 
   return (
     <>

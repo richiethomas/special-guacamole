@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as Marionette from 'backbone.marionette'
+
+export const RichieApplication = new Marionette.Application();
 
 ReactDOM.render(
   <React.StrictMode>
