@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/core": "^7.15.0",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "backbone": "1.1.2",
     "backbone.marionette": "^1.8.8",
@@ -19,7 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "cross-env NODE_ENV=test jasmine",
+    "test-orig": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,10 +40,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/register": "^7.15.3",
+    "@testing-library/react": "^11.2.7",
+    "babel-preset-react-app": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "ignore-styles": "^5.0.1",
+    "jasmine": "^3.9.0",
     "jasmine-core": "^3.9.0",
+    "jsdom": "^17.0.0",
     "karma": "^6.3.4",
     "karma-chrome-launcher": "^3.1.0",
     "karma-jasmine": "^4.0.1",
+    "karma-requirejs": "^1.1.0",
     "testdouble": "^3.16.2"
-  }
+  },
+  "type": "module"
 }

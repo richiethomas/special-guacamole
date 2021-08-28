@@ -1,0 +1,16 @@
+{
+  "spec_dir": "src",
+  "spec_files": [
+    "**/*[sS]pec.?(m)js",
+    "**/*test.js"
+  ],
+  "helpers": [
+    "helpers/babel.js",
+    "helpers/**/*.?(m)js"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true,
+  "babel": {
+    "presets": ["react-app"]
+  }
+}
